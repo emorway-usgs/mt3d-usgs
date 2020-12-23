@@ -475,7 +475,7 @@ C--ICBUND ARRAY SHOULD REMAIN UNTOUCHED
                   IF(NOCREWET.EQ.1) CTMP=0.
                   CNEW(J,I,K,INDEX)=CTMP
                   IF(MUTDRY.EQ.0) THEN
-                    WRITE(IOUT,122) K,I,J,INDEX,CNEW(J,I,K,INDEX)
+                    !WRITE(IOUT,122) K,I,J,INDEX,CNEW(J,I,K,INDEX)
                   ENDIF 
                 ENDDO
               ENDIF
@@ -544,7 +544,7 @@ C--ICBUND ARRAY SHOULD REMAIN UNTOUCHED
                   NICBND2=NICBND2+1               
                 ENDIF                             
                 IF(MUTDRY.EQ.0) THEN              
-                  WRITE(IOUT,355) DH(J,I,K),K,I,J
+                  !WRITE(IOUT,355) DH(J,I,K),K,I,J
                 ENDIF
                 ICBUND(J,I,K,1)=0
               ELSEIF(THKMIN.GT.0) THEN
@@ -556,7 +556,7 @@ C--ICBUND ARRAY SHOULD REMAIN UNTOUCHED
                     NICBND2=NICBND2+1          
                   ENDIF                        
                   IF(MUTDRY.EQ.0) THEN         
-                    WRITE(IOUT,365) DH(J,I,K),THKMIN0,K,I,J
+                    !WRITE(IOUT,365) DH(J,I,K),THKMIN0,K,I,J
                   ENDIF   
                   ICBUND(J,I,K,1)=0
                 ENDIF
